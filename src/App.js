@@ -17,10 +17,9 @@ function Navbar() {
 
   return (
     <header className="flex flex-col md:flex-row justify-between items-center px-6 py-4 bg-white shadow gap-3">
-      {/* Logo */}
+
       <h1 className="text-3xl font-bold">Harish cart</h1>
 
-      {/* Navigation */}
       <nav className="hidden md:flex space-x-6 text-gray-600">
         <a href="#">Women</a>
         <a href="#">Men</a>
@@ -30,7 +29,6 @@ function Navbar() {
         <a href="#" className="text-red-500">Sale</a>
       </nav>
 
-      {/* 🔍 Search Box */}
       <form onSubmit={handleSearch} className="flex items-center border rounded-lg overflow-hidden">
         <input
           type="text"
@@ -44,7 +42,6 @@ function Navbar() {
         </button>
       </form>
 
-      {/* Cart + Wishlist */}
       <div className="flex space-x-4">
         <button>🛒</button>
         <button>❤️</button>
@@ -57,7 +54,6 @@ function Navbar() {
 function ProductSection() {
   return (
     <main className="flex flex-col lg:flex-row gap-10 p-10">
-      {/* Left: Images */}
       <div className="flex-1">
         <img
           src={image1}
@@ -71,12 +67,10 @@ function ProductSection() {
         </div>
       </div>
 
-      {/* Right: Details */}
       <div className="flex-1">
         <h2 className="text-3xl font-semibold">Shoes Reebok Zig Kinetica 3</h2>
         <p className="text-xl mt-2 font-bold">$199.00</p>
 
-        {/* Colors */}
         <div className="mt-4">
           <p className="font-medium">Color: White</p>
           <div className="flex gap-2 mt-2">
@@ -85,7 +79,6 @@ function ProductSection() {
           </div>
         </div>
 
-        {/* Sizes */}
         <div className="mt-6">
           <p className="font-medium">Size: US Men</p>
           <div className="grid grid-cols-6 gap-2 mt-2">
@@ -123,7 +116,6 @@ function Reviews() {
     <section className="px-10 pb-10">
       <h3 className="text-xl font-semibold mb-4">Reviews ⭐ 4.8</h3>
 
-      {/* Rating Bars */}
       <div className="flex gap-10 mb-6">
         <div className="flex-1 space-y-2">
           {[5, 4, 3, 2, 1].map((star, idx) => (
@@ -145,7 +137,6 @@ function Reviews() {
         <p className="text-4xl font-bold">4.8</p>
       </div>
 
-      {/* Review List */}
       <div className="space-y-3">
         <div className="p-4 bg-white shadow rounded-lg">
           <p className="font-bold">Helen M.</p>
