@@ -10,10 +10,8 @@ function ProductDetail() {
 
   return (
     <div className="p-6">
-      {/* Back button */}
       <Link to="/" className="text-blue-500 underline">← Back</Link>
 
-      {/* Main shoe + info */}
       <div className="flex flex-col md:flex-row gap-6 mt-6">
         <img
           src={shoe.image}
@@ -29,7 +27,6 @@ function ProductDetail() {
         </div>
       </div>
 
-      {/* Related images (nee share pannina mari) */}
       <h2 className="text-2xl font-bold mt-10 mb-4">More Images</h2>
       <div className="grid grid-cols-3 gap-4">
         <img src="/images/shoe1.png" alt="Related 1" className="rounded-lg shadow" />
@@ -41,3 +38,4 @@ function ProductDetail() {
 }
 
 export default ProductDetail;
+
